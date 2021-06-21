@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.container .inputUrl {
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #DADCE0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.container .links {
+    transform: translate(-50%, -10%);
+    width: auto;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #DADCE0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.container .links .table {
+    margin: 0 auto;
+}
+
+.inputUrl h1 {
+    color: #202124;
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    text-align: center;
+    font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.inputUrl .inputBox {
+    position: relative;
+}
+
+.inputUrl .inputBox input {
+    width: 93%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #cccccc;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.inputUrl .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: gray;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUrl .inputBox input:focus ~ label,
+.inputUrl .inputBox input:valid ~ label,
+.inputUrl .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: #ff0404;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.inputUrl .inputBox input:focus {
+    outline: none;
+    border: 2px solid #ff0404;
+}
+
+.inputUrl input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #ff0404;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+}
+
+.inputUrl input[type="submit"]:hover {
+    background-color: #ff0404;
+    box-shadow: 0 1px 1px 0 rgba(225, 4, 4, 0.45), 0 1px 3px, 1px rgba(225, 4, 4, 0.3);
+}
