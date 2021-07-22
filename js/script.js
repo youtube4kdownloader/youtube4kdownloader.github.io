@@ -22,8 +22,11 @@ document.getElementById("submitUrl").onsubmit = function() {
     downloadType.innerHTML = "Download";
     let formatType = document.createElement("th");
     formatType.innerHTML = "Format";
+    let qualityType = document.createElement("th");
+    qualityType.innerHTML = "Quality";
     tr.appendChild(downloadType);
     tr.appendChild(formatType);
+    tr.appendChild(qualityType);
     head.appendChild(tr);
     table.appendChild(head);
     var body = document.createElement("tbody");
@@ -38,8 +41,15 @@ document.getElementById("submitUrl").onsubmit = function() {
             download.appendChild(a);
             let type = document.createElement("td");
             type.innerHTML = info["formats"][i]["mimeType"].split(";")[0];
+            let quality = document.createElement("td");
+            if (info["formats"][i]["qualityLabel"] == null) {
+                quality.innerHTML = info["formats"][i]["quality"];
+            } else {
+                quality.innerHTML = info["formats"][i]["quality"].concat(" (", info["formats"][i]["qualityLabel"], ")");
+            }
             format.appendChild(download);
             format.appendChild(type);
+            format.appendChild(quality);
             body.appendChild(format);
             body.appendChild(document.createElement("br"));
         }
