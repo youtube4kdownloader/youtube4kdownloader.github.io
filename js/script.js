@@ -24,9 +24,15 @@ document.getElementById("submitUrl").onsubmit = function() {
     formatType.innerHTML = "Format";
     let qualityType = document.createElement("th");
     qualityType.innerHTML = "Quality";
+    let hasAudio = document.createElement("th");
+    hasAudio.innerHTML = "Has Audio";
+    let hasVideo = document.createElement("th");
+    hasVideo.innerHTML = "Has Video";
     tr.appendChild(downloadType);
     tr.appendChild(formatType);
     tr.appendChild(qualityType);
+    tr.appendChild(hasAudio);
+    tr.appendChild(hasVideo);
     head.appendChild(tr);
     table.appendChild(head);
     var body = document.createElement("tbody");
@@ -47,9 +53,15 @@ document.getElementById("submitUrl").onsubmit = function() {
             } else {
                 quality.innerHTML = info["formats"][i]["quality"].concat(" (", info["formats"][i]["qualityLabel"], ")");
             }
+            let audio = document.createElement("td");
+            audio.innerHTML = info["formats"][i]["hasAudio"].toString();
+            let video = document.createElement("td");
+            video.innerHTML = info["formats"][i]["hasVideo"].toString();
             format.appendChild(download);
             format.appendChild(type);
             format.appendChild(quality);
+            format.appendChild(audio);
+            format.appendChild(video);
             body.appendChild(format);
             body.appendChild(document.createElement("br"));
         }
