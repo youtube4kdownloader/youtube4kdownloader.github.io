@@ -48,10 +48,18 @@ document.getElementById("submitUrl").onsubmit = function() {
             let type = document.createElement("td");
             type.innerHTML = info["formats"][i]["mimeType"].split(";")[0];
             let quality = document.createElement("td");
-            if (info["formats"][i]["qualityLabel"] == null) {
-                quality.innerHTML = info["formats"][i]["quality"];
+            if (info["formats"][i]["qualityLabel"] == undefined || info["formats"][i]["qualityLabel"] == null) {
+                if (info["formats"][i]["quality"] == undefined || info["formats"][i]["quality"] == null) {
+                    quality.innerHTML = "Unknown";
+                } else {
+                    quality.innerHTML = info["formats"][i]["quality"];
+                }
             } else {
-                quality.innerHTML = info["formats"][i]["quality"].concat(" (", info["formats"][i]["qualityLabel"], ")");
+                if (info["formats"][i]["quality"] == undefined || info["formats"][i]["quality"] == null) {
+                    quality.innerHTML = info["formats"][i]["qualityLabel"];
+                } else {
+                    quality.innerHTML = info["formats"][i]["quality"].concat(" (", info["formats"][i]["qualityLabel"], ")");
+                }
             }
             let audio = document.createElement("td");
             audio.innerHTML = info["formats"][i]["hasAudio"].toString();
