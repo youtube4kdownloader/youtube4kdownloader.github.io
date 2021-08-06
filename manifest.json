@@ -3,8 +3,8 @@
     "name": "YouTube Video Downloader",
     "icons": [
         {
-            "src": "https://www.youtube.com/s/desktop/65defdc1/img/favicon_32x32.png",
-            "sizes": "32x32",
+            "src": "https://www.gstatic.com/images/branding/product/1x/youtube_512dp.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
