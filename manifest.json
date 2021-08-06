@@ -1,0 +1,15 @@
+{
+    "short_name": "YouTube Downloader",
+    "name": "YouTube Video Downloader",
+    "icons": [
+        {
+            "src": "https://www.youtube.com/s/desktop/65defdc1/img/favicon_32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
