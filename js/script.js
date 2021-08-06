@@ -5,19 +5,6 @@ function handleForm(event) {
 }
 document.getElementById("submitUrl").addEventListener('submit', handleForm);
 
-self.addEventListener('fetch', function(event) {
-    event.respondWith(async function() {
-        try {
-            var res = await fetch(event.request);
-            var cache = await caches.open('cache');
-            cache.put(event.request.url, res.clone());
-            return res;
-        } catch(error) {
-            return caches.match(event.request);
-        }
-    }());
-});
-
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js');
 }
