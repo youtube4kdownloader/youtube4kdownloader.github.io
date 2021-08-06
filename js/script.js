@@ -5,6 +5,10 @@ function handleForm(event) {
 }
 document.getElementById("submitUrl").addEventListener('submit', handleForm);
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js');
+}
+
 document.getElementById("submitUrl").onsubmit = function() {
     var url = document.getElementById("url").value;
     if (document.getElementsByClassName("links").length < 1) {
