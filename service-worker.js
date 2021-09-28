@@ -5,7 +5,7 @@ self.addEventListener('fetch', function(event) {
             var cache = await caches.open('cache');
             cache.put(event.request.url, res.clone());
             return res;
-        } catch(error) {
+        } catch (error) {
             return caches.match(event.request);
         }
     }());
