@@ -19,6 +19,17 @@ body {
     background-size: cover;
 }
 
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+#dark-mode {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
 .container {
     position: absolute;
     top: 50%;
