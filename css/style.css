@@ -160,7 +160,7 @@ input:checked + .slider:before {
     font-size: 1rem;
     color: gray;
     pointer-events: none;
-    transition: 0.2s;
+    transition: input 0.2s;
 }
 
 .inputUrl .inputBox input:focus ~ label,
