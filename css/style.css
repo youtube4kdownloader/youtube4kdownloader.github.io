@@ -70,7 +70,7 @@ body.dark-mode {
     background-color: white;
     -webkit-transition: .2s;
     transition: .2s;
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 input:checked + .slider {
@@ -160,7 +160,7 @@ input:checked + .slider:before {
     font-size: 1rem;
     color: gray;
     pointer-events: none;
-    transition: input 0.2s;
+    transition: all 0.2s, background-color 0s;
 }
 
 .inputUrl .inputBox input:focus ~ label,
