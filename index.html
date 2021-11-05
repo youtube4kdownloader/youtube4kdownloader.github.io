@@ -10,6 +10,13 @@
         <link rel="apple-touch-icon" sizes="512x512" href="https://www.gstatic.com/images/branding/product/1x/youtube_512dp.png">
     </head>
     <body>
+        <div id="dark-mode">
+            <div id="svg-container" style="display: inline-block; position: relative; top: 13px; right: 2px;"></div>
+            <label style="--bg-color-enabled:#444; --bg-color:#999; --switch-color:#fff; --switch-color-enabled:#bbb;" class="switch">
+                <input id="toggle" type="checkbox" onclick="a()">
+                <span class="slider"></span>
+            </label>
+        </div>
         <div class="container" id="container">
             <div class="inputUrl">
                 <h1>YouTube Video Downloader</h1>
