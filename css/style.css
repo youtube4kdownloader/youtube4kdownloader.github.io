@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #1b7cd1;
+}
+
 body {
     transform: scale(1.5);
     position: fixed;
