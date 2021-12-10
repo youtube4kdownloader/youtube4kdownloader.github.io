@@ -6,6 +6,8 @@ Go to https://youtube4kdownloader.github.io and paste the URL of the YouTube vid
 
 Then press the `Download` button and choose the format you want.
 
+This project is licensed under the MIT License.
+
 ```
 Copyright (c) 2021 IceCruelStuff
 
