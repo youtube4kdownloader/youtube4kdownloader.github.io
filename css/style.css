@@ -23,6 +23,13 @@ body {
     background-size: cover;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #eee;
+    }
+}
+
 body.dark-mode {
     background-color: #222;
     color: #eee;
