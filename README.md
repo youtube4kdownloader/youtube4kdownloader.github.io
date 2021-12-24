@@ -2,7 +2,7 @@
 Download YouTube videos in your browser!
 
 ## Usage
-Go to https://youtube4kdownloader.github.io and paste the URL of the YouTube video you want to download.
+Go to https://youtube4kdownloader.github.io or https://ytdl-app.web.app and paste the URL of the YouTube video you want to download.
 
 Then press the `Download` button and choose the format you want.
 
