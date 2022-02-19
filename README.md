@@ -2,7 +2,7 @@
 Download YouTube videos in your browser!
 
 ## Official Websites
-https://ytdl-app.web.app/official-websites
+https://youtube4kdownloader.github.io/official-websites
 
 ## Usage
 Go to https://ytdl-app.web.app and paste the URL of the YouTube video you want to download.
