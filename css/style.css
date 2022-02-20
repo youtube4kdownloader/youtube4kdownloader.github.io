@@ -141,6 +141,18 @@ input:checked + .slider:before {
     font-weight: 400;
 }
 
+@media (max-width: 1000px) {
+    .inputUrl h1 {
+        font-size: 16px;
+    }
+    .dark-mode .inputUrl h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+
 .inputUrl .inputBox {
     position: relative;
 }
