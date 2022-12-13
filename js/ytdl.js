@@ -1,1 +1,0 @@
-window.getInfo=(async e=>{if(""!==e){var t=await fetch("https://ytdl-ios.netlify.app/.netlify/functions/ytdl?url="+e);return 500===t.status?(console.log(await t.json()),""):await t.json()}console.log("Error: video URL cannot be empty")})
